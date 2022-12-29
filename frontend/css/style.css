@@ -1,4 +1,736 @@
-body{
-    color:red;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+html{scroll-behavior:smooth}
+
+/* header and navbar styling */
+#b4Nav {
+    background-color: #9e9999;
+    width: 100%;
+    height: 27px;
+    margin: 0;
+    color: white;
+    justify-content: space-between;
+    align-items: center !important;
+    padding: 0 20px 0 20px;
+    display:inline-flex;
+     -webkit-justify-content: space-between;
+
 }
 
+header{
+    position: relative;
+
+    z-index: 10000 !important;
+}
+
+.topicons{
+    margin-right: 8px;
+}
+
+
+nav{
+    background-color: #42474F;
+    padding: 4px 0px;
+    position:fixed;
+    /* top:0px; */
+    width:100%;
+    transition: 0.4s ease-in-out;
+}
+
+nav.sticky{
+    background-color: #42474F;
+    padding: 0px 0px;
+    position:fixed;
+    top:0px;
+    width:100%;
+    transition: 0.6;
+    
+}
+
+
+
+.TopArrow{
+    display:none;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    position: fixed;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;   /* add this line */
+
+}
+
+.logo{
+    max-width: 70px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.menu{
+  margin-top: 15px;
+}
+
+.menu ul{
+    padding:0;
+    margin: 0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 24px;
+}
+
+.menu ul li:hover{
+    color: #DCA67C;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* end of header and navbar styling */
+
+  /* media for images overlapping */
+  @media only screen and (max-width: 891px) {
+    
+    .container1{
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2%;
+     }
+     .left1{
+        width: 100%;
+        margin: 0;
+        max-height: 400px !important;
+     }
+     .right1{
+        width: 85% !important;
+        margin: 0;
+        margin-top: -100px !important;
+        margin-left: 0px !important;
+        padding: 30px;
+     }
+
+     .left2{
+        width:100%;
+        padding: 20px !important;
+      }
+
+     .left2 p {
+        padding: 20 30px 0 0 !important;
+    }
+    .right2{
+        /* width: 85% !important; */
+        display: none;
+    }
+
+   }
+
+
+
+
+/* scrollbar styling */
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #42474F;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  /* end of scrollbar styling */ 
+
+
+/* welcome section style */
+.welcomeDiv{
+    /* margin-top: 40px 0 0 0 ; */
+    width: 100%;
+    height: 100vh !important;
+    background-color: grey;
+     
+    padding: 0;
+    background-image: url("../images/sky.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    /* opacity: 0.8; */
+    /* max-height: calc(100vh - 133px) !important; */
+ }
+
+.welcomeSection{
+    padding-top: 20px;
+}
+
+ .icareText{
+    font-size:9vw;
+    position: relative;
+    top:30%;
+    /* left : 500px; */
+    margin-left: 5%;
+    color: #fff;
+    text-shadow: 5px 5px 9px black;
+    font-family: "Brush Script MT";
+    -webkit-transition:all linear 0.5s;
+ }
+
+
+
+ /* styling the about section */
+ .aboutSection{
+    min-height: 90vh;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:3% 0;
+    /* background-color: blueviolet; */
+    /* background-color: #d3f9da; */
+
+ }
+ body{
+    background-color: #fffafa;
+
+ }
+
+ .txtContent{
+    font-family: 'Montserrat';
+}
+
+.container1{
+    width:90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+
+}
+
+.left1{
+   width:35%;
+   height: 550px;
+   background-image: url('../images/drmhmd.jpg')  ;
+   background-repeat: no-repeat;
+   background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   border-radius: 5px;
+}
+
+.right1{
+    width:65%;
+    min-height: 400px;
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    border-radius: 5px;
+    color:white;
+    margin-left: -35px;
+    margin-top:20%; 
+    position: relative;
+
+}
+
+.right1 p, .left2 p{
+    margin: 15px 0;
+    line-height: 30px;
+}
+/* end of about section */
+
+
+/* second section styling */
+.pbmsSection{
+    min-height: 100vh;
+    max-height: fit-content;
+    width:100%;
+    /* background-color: #d3f9da; */
+    margin:10% 0;
+    padding-top: 5%;
+}
+
+/* life challenging section */
+.left2{
+    width: 80%;
+    min-height: 400px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 70px 90px 60px 60px;
+    border-radius: 5px;
+}
+
+.left2 p{
+    padding: 20 130px 0 0;
+
+}
+
+.right2{
+    width: 35%;
+    height: 350px;
+    background-image: url('../images/lifeChalenges.jpg')  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 5px;
+    margin-left: -155px;
+    margin-top: 50px;
+
+}
+
+h1{
+    font-weight: 650;
+}
+
+.bottomBorder{
+    background-color: #808080;
+    width: 100%;
+    position: relative;
+    height: 20px;
+    display: inline-block;
+    text-align: center!important;
+}
+
+.innerBorder{
+    padding: 0 20px;
+    position: absolute;
+    top: -32px;
+    width: 100%;
+    display: block;
+}
+
+.innerBorder>div{
+    background-color: #808080;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.innerBorder>div>h1{
+    padding: 7px 0;
+    font-family: 'Montserrat';
+     margin: 0;
+    color: #fff;
+    font-size: 1.95rem;
+    letter-spacing: 1.8px;
+    font-weight: bolder;
+}
+
+.learnMoreBtn{
+    position: absolute;
+    bottom: 20px ;
+    right:50px;
+    border-radius: 25px;
+    border-color: #42474F;
+}
+
+.FixLife, .services{
+    background-color: #fff;
+    width: 100%;
+    height: fit-content;
+    
+    padding: 65px;
+    /* background-color: #609f70; */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+
+}
+
+.specMain, .serviceMain{
+   width: 90%;
+   height: 90%;
+   padding: 30px;
+   margin-top: 10px;
+   
+}
+
+.h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(119, 115, 115);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    margin-bottom: 20px;
+}
+
+.h4Onlinetherapy{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    color: #f1f1f1;
+    font-size: 1.6vw !important;
+}
+
+.specText{
+    width: 65%;
+    /* background-color: #42474F; */
+    height: fit-content;
+    padding: 20px;
+    display: inline-block;
+    float: left;
+ }
+
+ .serviceimgDiv{
+    width: 35%;
+    /* background-color: #42474F; */
+    height: fit-content;
+    padding: 20px;
+    display: inline-block;
+    float: left;
+ }
+
+  .serviceText{
+    width: 65%;
+    /* background-color: #42474F; */
+    height: fit-content;
+    padding: 20px;
+    display: inline-block;
+    float: right ;
+    /* position: absolute;
+    right:20px; */
+ }
+
+.cactusImg{
+    /* background-image: url('../images/wallhaven-cactus.jpg')  ; */
+    width: 350px;
+    display: inline-block;
+    height: 350px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    top: 33%;
+    right: 10%;
+    float: right;
+    border-radius: 8px;
+
+}
+
+.serviceImg{
+    width: 100%;
+    display: inline-block;
+    height: 350px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    /* position: absolute; */
+    /* top: 33%;
+    right: 0%; */
+    float: left;
+    border-radius: 8px;
+}
+
+
+/* education and recgnition section styling */
+.eduNReco{overflow:auto;
+    width: 100%;
+    height: fit-content;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+
+}
+.education{
+    width: 50%;
+    height: 100vh;
+    display: inline-block;
+    padding: 3%;
+}
+
+.recognition{
+    width: 50%;
+    height: 100vh;
+    float: right;
+    padding: 3%;
+}
+
+
+.EduUl{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+ 
+
+
+
+
+@media  screen and (max-width: 991px) {
+
+    #b4Nav{
+        display:none;
+    }
+    nav{
+        /* max-height: fit-content; */
+    }
+  
+    .menu{
+        /* margin-top: 15px; */
+        position: fixed;
+        width:280px;
+        height:100%;
+        right: -280px;
+        top: 56px;
+        background-color: #42474F;
+        transition: 0.3s ease-in-out;
+    }
+ 
+    .menu ul li{
+      display: block;
+      border-bottom: #DFE7E7 1px solid;
+      margin-bottom: 8px;
+      text-align: left;
+      margin: 0;
+      padding: 10px 0 10px 26px;
+    }
+
+    .menu-icon{
+        display:inline-block;
+        position: relative;
+        right: 0;
+        top: 20px;
+        cursor: pointer;
+
+    }
+
+    .menu-icon span{
+        width:38px;
+        height:3px;
+        background-color: #fff;
+        display:block;
+        transition-duration: 0.5s;
+
+    }
+
+    .menu-icon span:nth-child(2){
+     margin: 6px 0px;
+    }
+    .menu-class{
+        right: 0px;
+    }
+
+    .menu-icon-cross span:nth-child(2){
+        display: none;
+    }
+    .menu-icon-cross span:nth-child(1){
+         transform: rotate(40deg);
+         transition-duration: 0.5s;
+    }
+    .menu-icon-cross span:nth-child(3){
+        transform: rotate(-40deg);
+        transition-duration: 0.5s;
+        margin-top: -3px;
+    }
+
+    .welcomeDiv{
+        max-height: calc(100vh - 253px) !important;
+     }
+
+     /* .cactusImg{
+       max-height: 30%;
+       max-width: 40%;
+    
+    } */
+
+    .imgDiv, .serviceimgDiv{
+        display: flex;
+        width: 100%;
+        align-items: center !important;    
+        justify-content: center;  
+    }
+
+   
+
+    .cactusImg{
+        align-self: center;
+        /* display: flex; */
+        justify-content: center;
+        position: relative;
+    }
+
+    .specText{
+        display: block;
+        width: 100%;
+        padding: 0px;
+        /* word-break: break-all; */
+
+     }
+    .specMain, .serviceMain{
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FixLife{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px;
+        /* background-color: #609f70; */
+   
+    
+    }
+
+    .serviceimgDiv{
+        width: 100%;
+        /* background-color: #42474F; */
+        height: fit-content;
+        padding: 20px;
+        /* display: inline-block;
+        float: left; */
+     }
+
+     .serviceImg {
+    
+        width: 350px;
+ 
+    }
+
+    .serviceText{
+        width: 100%;
+        display: inline-grid;
+     }
+
+     .services {
+ 
+        padding: 16px;
+     
+    }
+
+    .education{
+        width: 100%;
+        height: fit-content;
+        display: block;
+    }
+    
+    .recognition{
+        width: 100%;
+        height: fit-content;
+        display:block;
+     }
+    
+    
+  }
+
+  .curve h1{
+    font-size: 2.9rem;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 50% !important;
+    text-align: center;
+    color: yellow;
+    
+   }
+
+  .spec{
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  
+
+
+  /* curve section */
+ 
+
+  .readyH1{
+    width: 100%;
+    font-size: 4.9rem;
+    font-family: 'Tangerine', serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+    color: #42474F;
+    text-shadow: 4px 4px 4px #aaa;
+    letter-spacing: 3px;
+    margin: 0 !important;
+    padding: 0 !important;  
+      
+  }
+
+  .readySection{
+    width: 100%;
+    height: 50vh;
+    /* background-color: #919191; */
+    text-align: center;
+
+  }
+
+  .readyContent
+  {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+ }
+
+.Line{
+    width:10%;
+    background-color: #42474F;
+    height: 2px;
+}
+
+.h1ready{
+    width:80%;
+}
+
+iframe{
+    width:100%;
+    height: 500px;
+    /* filter: invert(100%) */
+}

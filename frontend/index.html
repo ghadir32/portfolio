@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio</title>
-
+ 
        
         <script src="./js/angular-1.8.2.js"></script>
         <script src="./js/angular-resourse-1.8.2.js"></script>
@@ -15,6 +15,7 @@
  
         <link rel="stylesheet" href="./css/bootstrap-5.2.3.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
          <!-- Favicon -->
          <link rel="icon" is="favIcon" type="image/png" href="./images/Psi2.svg.png" />
@@ -24,17 +25,400 @@
 
 <body ng-controller="homeController">
 
-    
+    <audio muted="muted" id="tah_audio" src="slow-motion-121841.mp3" loop="loop"></audio>
+
     <div class="content">
 
+        <header>
+            <div id="b4Nav">
+                <div>
+                <i  class=" topicons fas fa-clock"></i>open: 8:00am-3:00pm 
+                </div>
+                <span> <i class="topicons fas fa-envelope"></i>drmohamadjaber5@gmail.com</span>
+                <span> <i class="topicons fas fa-map-marked-alt"></i> Nabatieh, Yassine building, 2nd floor</span>
+                <span><i class="topicons fas fa-phone-alt"></i> 03923417</span>
+           </div>
+           <nav> 
+                <div class="container">
+                    <div class="row">
+
+                           <div class="col-md-3 col-sm-3 col-3">
+                                <div >
+                                    <img class="logo" src="./images/logo/Screenshot (372).png"  alt="logo">
+                                </div>
+                            </div>
+
+                            <div class="col-md-9 col-sm-9 col-9 text-end">
+                                <div class="menu-icon" ng-click="val = enable()" ng-class="{'menu-icon-cross':val}">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+
+                                </div>
+                                <div class="menu"  ng-class="{'menu-class':val}">
+                                    <ul>
+                                        <li> <a > About </a> </li>
+                                        <li> <a href="#specDiv"> Speciality</a> </li>
+                                        <li> <a> Services</a> </li>
+                                        <li><a> Acheivments</a></li>
+                                        <li><a>Education</a></li>
+                                        <li><a>Contact</a></li>
+
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                       
+                    </div>
+
+                </div>
+            </nav>
+    </header>
+
+
+
+    <!-- <div class="toparrowDiv" id="upDiv"> <a> <i class="far fa-long-arrow-up"></i></a> </div> -->
+    
+<button  class="TopArrow" id="upDiv" title="Go to top"><i class="fas fa-angle-double-up"></i> </button>
+
+    <!-- welcome section -->
+    <section class="welcomeSection">
+        <div class="welcomeDiv">
+            <img class="welcomeImg"  >
+            <h2 class="icareText">I Care...<p class="pLetsTalk">Let's Talk!</p></h2>
+            <p class="h4Onlinetherapy">ONLINE AND IN-PERSON THERAPY FOR TEENS AND ADULTS</p>
+
+        </div>
+        
+    </section>
+    <!-- end of welcome section -->
+
+    <!-- <img class="welcomeImg"  > -->
+    <h1 STyle="text-align: center; margin-top: 100px">ABOUT ME</h1>
+    <hr style="width:50%; margin:auto">
+
+   <section class="aboutSection"  id="aboutSection" name="aboutSection">
+
+        <div class="container1">
+            <div class="left1"> </div>
+
+            <div class="right1">
+
+                <div class="txtContent">
+                    <h1>Hi, It's Dr Mohammad, and I'm glad You're here</h1>
+                    <p> <strong>I'm a Licensed Clinical Psychologist.</strong> I care deeply about connecting with my clients and helping them feel safe and understood. </p>
+                    <!-- <p> We’ll work together to learn more about your current challenges and past patterns, and we’ll build on your strengths to move closer to where you want to be. I’m curious and warm, and I’m here to help.</p> -->
+               <p>I have over 10 years of experience guiding clients through the challenging parts of life.
+                 Whether it’s the loss of a loved one,  difficult health diagnosis, addiction, sexual orientation,  or moving forward after trauma... we can work together to find the way forward.</p>
+                </div>
+                <button class="btn btn-light learnMoreBtn">More about Dr Mohammad</button>
+            </div>
+
+        </div>
+
+
+   </section>
+
+   <section class="pbmsSection">
+
+    <div class="container1">
+        <div class="left2">
+            <div class="txtContent">
+                <h1>Life Can be Challenging Sometimes.</h1>
+                <p>Challenges in life are a given, and they can be used to your advantage. Each one is an opportunity for personal growth and self-improvement.
+                 <br>The emotions that one could experience when dealing with a challenging issue may include; <span style="font-weight:bold">sadness, anger, loneliness, resentment, anxiety, stress, fear or even depression.</span> <br>
+                     And I’m happy to meet you exactly where you are - because you and I will work together. We’re a team..</p>
+            </div>
+        </div>
+
+        <div class="right2"></div>
+
+    </div>
+
+   </section>
+
+   <!-- emd of life challenges section -->
+
+   <div class="bottomBorder">
+        <div class="innerBorder">
+            <div>
+                <h1>Let's Fix This! </h1>
+                <!-- <hr style="width:50%; margin:auto"> -->
+            </div>
+        </div>
+   </div>
+
+    <div class="specDiv"></div>
+
+
+   <!-- beginning of life fixing section -->
+   <section class="FixLife container-fluid" id="specDiv">
+    <h3 class="h3">It's important that you get the right support, I’m here to help you navigate life’s challenges, and get the life you deserve.</h3> 
+    <br>
+    <!-- <h3 class="h3">I also educate organizations and therapists on these topics.</h3> -->
+    <div class="specMain">
+        <div class="specText">
+
+                <p class="spec"> I specialize in mental and neurological illnesses, a psychoanalyst, psychotherapist, dealing with personal disorders and family orientation.</p>
+
+                <p> My goal is to help you feel more connected to yourself and others, and empowered to seek out the life you want.</p>
+
+                 <p> Ultimately, you will be the one to decide on your own best path. I aim to provide you with a  <strong>safe, respectful, 
+                            compassionate, encouraging, and non-judgmental</strong> environment where you can explore your options..</p>
+
+                 <p> As your therapist, I serve as your facilitator. I strive to create an upbeat, supportive environment where you can learn and discover more about yourself, your patterns, and your own deeply-held values.
+
+                    You’ll have the time and space to freely explore the challenges you’re facing. 
+                    And we’ll work collaboratively to build the coping skills and healthy boundaries you need to get unstuck from the thoughts and behaviors holding you back..</p>
+
+        </div>
+
+        <div class="imgDiv" > <img class="cactusImg"  src="./images/wallhaven-cactus.jpg"> </div>
+
+    </div>
+     
+   </section>
+   <!-- end of speciality section -->
+
+
+   <!-- start of services section -->
+   <section class="services container-fluid">
+        <h3 class="h3">So, What are my services and how can i help you?</h3> 
+        <br>
+        <!-- <h3 class="h3">I also educate organizations and therapists on these topics.</h3> -->
+
+
+        <div class="serviceMain">
+
+            <div class="serviceimgDiv" > <img class="serviceImg"  src="./images/tbl1.jpg"> </div>
+
+                <div class="serviceText">
+
+                    <p class="spec"> I'm a clinical psychologist, that works with the following Therapeutic Techniques:</p>
+                        <ul>
+                            <li> Analytical Therapy </li>
+                            <li>  CBT (Cognitive Behavioral Therapy) </li>
+                            <li> EMDR (Eye Movement Desensitization and Reprocessing)   </li>
+                            <li> Art Therapy </li>
+
+                        </ul>
+                      
+
+                    <p>  Identify psychological, emotional or behavioral issues.</p>
+
+                    <p> Develop and implement treatment plans and therapeutic processes.</p>
+                    <p> Diagnose psychological, emotional or behavioral disorders.</p>
+                                
+                </div>
+
+        </div>
+     
+   </section>
+   <!-- end of services secyion -->
+
+
+
+   
+   <!-- start of accomplishments and education section -->
+   <section class="eduNReco container-fluid">
+    <br>
+    <h3 class="h3">Education and Recognition</h3> 
+
+    <div class="education">
+        <ul class="EduUl">
+            <li> <strong> Doctorate in Psychology,</strong> Lebanese University, Sin el fil, July-2018</li>
+            <li> <strong> Master in Research Clinical and Harmonic Psychology,</strong> Lebanese University, Dikweneh, 2012-2013</li>
+            <li> <strong> License in Clinical Psychology,</strong> Lebanese University, Saida, 2000-2005</li>
+            <li>Baccalaureate (Mathematics Branch), 1996</li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="recognition">
+
+        <ul class="RecognitionUl">
+            <li>Organization of monthly courses for specialists and students on psychological tests (TAT, Ruschach test, black-footed sheep score), (ZOOM), 2019– Present</li>
+            <li>Psychosocial intervention to deal with crises and people exposed to war (20 hours of training), The Ministry of Social Affairs in cooperation with the International Organization for Migration, Ebl el-Saqie, 2009.</li>
+            <li>Psychological support program after the July attack, The Islamic Educational Foundation, 2006.</li>
+            <li>Educational intervention program to mitigate the psychological effects of aggression, Al-Mabarat Charity Association, 2006.</li>
+            <li> Authorized to exercise the profession of clinical psychologist, Ministry of Public Health in Lebanon, since 2018.</li>
+
+        </ul>
+    
+    </div>
+
+  
+ 
+    </section>
+   <!-- start of accomplishments and education section -->
+
+
+   <section class="readySection">
+        <!-- <div class="ready"> -->
+            <div class="readyContent"> 
+                <div class="Line left"></div>
+                <h1 class=" h1ready readyH1">Ready to work together?</h1> 
+                 <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                     <path fill="#42474F" fill-opacity="1" d="M0,224L40,213.3C80,203,160,181,240,181.3C320,181,400,203,480,224C560,245,640,267,720,240C800,213,880,139,960,133.3C1040,128,1120,192,1200,197.3C1280,203,1360,149,1400,122.7L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                
+                 </svg> -->
+                 <div class="Line right"></div>
+                 
+
+            </div>
+           
+            <button type="button" class="btn btn-dark getInTouch"><a target="_blank" style ="text-decoration: none; color:#fff" href="https://api.whatsapp.com/send?phone=96103923417&text=Hi%20we%20need%20help%20regarding%20something">  Let's get in touch</a></button>
+
+        <!-- </div> -->
+   </section>
 
 
 
 
+   <section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.8743426152014!2d35.487921574896966!3d33.37434645322217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151e9550e1adaa53%3A0x154ef600514780a8!2sGerman%20products%20hamida!5e0!3m2!1sen!2slb!4v1672231747250!5m2!1sen!2slb" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </section>
 
+   <!-- footer beginning -->
+   <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.facebook.com/profile.php?id=100082890906917" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+     
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://www.instagram.com/dr.mohamdjaber/" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
 
+         <!-- Linkedin -->
+         <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="#!" role="button"
+         ><i class="fab fa-tiktok"></i></a>
+  
+             <!-- whatsapp -->
+             <a class="btn btn-outline-light btn-floating m-1" target="_blank" href="https://api.whatsapp.com/send?phone=96103923417&text=Hi%20we%20need%20help%20regarding%20something" class="applyinfo-btn"" role="button"
+             ><i class="fab fa-whatsapp"></i
+           ></a>
+     
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+          
+  
+            
+  
+          
 
+            <div class="col-auto">
+              <p class="pt-2">
+                <img class="logo" src="./images/logo/Screenshot (372).png"  alt="logo">
+              </p>
+            </div>
 
+            
+           </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <!-- <section class="mb-4">
+        <p>
+         
+         Online therapy sessions available/ Live herapy sessions available, Nabatieh, nabih berry revenue
+        </p>
+      </section> -->
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Let's get in touch!</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p href="#!" class="text-white"><i class="fas fa-envelope"></i> drmohamadjaber5@gmail.com</p>
+              </li>
+              <li>
+                <p href="#!" class="text-white"><i class="fas fa-phone-alt"></i>03923417</p>
+              </li>
+            
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">location</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p href="#!" class="text-white">Online session available via Whatsapp video call</p>
+              </li>
+              <li>
+                <p href="#!" class="text-white">Live herapy sessions available, Nabatieh, nabih berry revenue</p>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Schedule hours</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <p href="#!" class="text-white">In person Hours: 08:00-am to 3:00-pm </p>
+              </li>
+              <li>
+                <p href="#!" class="text-white">Virtual Hours: 6:30-pm to 11:00pm</p>
+              </li>
+            
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+       
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
 
 
 
@@ -67,6 +451,34 @@
 
     </div>
 
+
+    <script type="text/javascript">
+
+          // Get the button
+        let mybutton = document.getElementById("upDiv");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        mybutton.addEventListener('click', function(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+        })
+      
+
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
 </body>
 
     </html>
